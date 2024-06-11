@@ -1,2 +1,3 @@
-# Desenvolve-Python-B-sico
-Desenvolve-Python-Basico
+ Projeto Desenvolve - Itabira
+ Programação básica com Python
+ Matricula: PDITA206
