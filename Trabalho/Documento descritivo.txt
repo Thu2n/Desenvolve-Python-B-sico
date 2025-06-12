@@ -1,0 +1,47 @@
+# Sistema de Gerenciamento - Livraria Digital 📚
+
+## Introdução
+
+Modelei uma livraria digital chamada **"Letras & Versos"**, especializada em obras clássicas da literatura brasileira. O sistema será utilizado por três tipos de usuários:
+
+- **Administrador:** possui todas as permissões (gerenciar usuários e livros);
+- **Funcionário:** pode gerenciar apenas o catálogo de livros;
+- **Cliente:** pode visualizar os livros, realizar buscas e ordenar os resultados.
+
+A loja oferece livros físicos e digitais, com títulos cadastrados em um catálogo organizado por nome, autor, preço e estoque.
+
+---
+
+## Implementação
+
+### Usuários
+
+1. **Estrutura de dados:** os usuários são carregados em um dicionário do tipo `{usuario: (senha, nível)}`;
+2. **Arquivo:** `usuarios.csv` com colunas: nome, senha, nível;
+3. **Funcionalidades (CRUD):**
+   - **Create:** Criar um novo usuário;
+   - **Read:** Listar usuários;
+   - **Update:** Atualizar senha ou nível de um usuário;
+   - **Delete:** Remover um usuário do sistema.
+
+### Livros
+
+1. **Estrutura de dados:** uma lista de dicionários, cada um com os campos `"codigo"`, `"nome"`, `"autor"`, `"preco"` e `"estoque"`;
+2. **Arquivo:** `livros.csv` com cabeçalho e dados em UTF-8;
+3. **Funcionalidades (CRUD):**
+   - **Create:** Adicionar novo livro ao estoque;
+   - **Read:** Listar todos os livros, buscar por nome ou código;
+   - **Update:** Atualizar dados de um livro;
+   - **Delete:** Remover um livro;
+   - **Extras:** Ordenar por nome ou por preço.
+
+---
+
+## Conclusão
+
+Durante o desenvolvimento, enfrentei desafios como organizar permissões de acesso por nível de usuário e garantir o salvamento correto dos arquivos CSV. 
+
+
+Este projeto consolidou conhecimentos de manipulação de arquivos, controle de fluxo, e estruturas de dados em Python.
+
+---
